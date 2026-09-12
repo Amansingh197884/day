@@ -65,3 +65,233 @@ function startCounting() {
 window.addEventListener("load", function () {
   startCounting();
 });
+
+// about js 
+var tabButtons = document.querySelectorAll(".tab-btn");
+
+tabButtons.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    tabButtons.forEach(function (b) {
+      b.classList.remove("active");
+    });
+    this.classList.add("active");
+  });
+});
+
+// swiper js 
+var propertySwiper = new Swiper(".propertySwiper", {
+  slidesPerView: 1.15,
+  spaceBetween: 24,
+  loop: true,
+  speed: 600,
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2.15,
+      spaceBetween: 24,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 28,
+    },
+  },
+});
+// new js 
+var projectsSwiper = new Swiper(".projectsSwiper", {
+  slidesPerView: 1.25,
+  spaceBetween: 18,
+  loop: true,
+  speed: 600,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2.2,
+      spaceBetween: 18,
+    },
+    768: {
+      slidesPerView: 3.2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4.5,
+      spaceBetween: 22,
+    },
+    1280: {
+      slidesPerView: 5.5,
+      spaceBetween: 22,
+    },
+  },
+});
+
+
+// new js 
+var partnersSwiper = new Swiper(".partnersSwiper", {
+  slidesPerView: 2.5,
+  spaceBetween: 16,
+  loop: true,
+  speed: 4000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  navigation: {
+    nextEl: ".partners-btn-next",
+    prevEl: ".partners-btn-prev",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 3.5,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 4.5,
+      spaceBetween: 18,
+    },
+    1024: {
+      slidesPerView: 6.5,
+      spaceBetween: 20,
+    },
+    1280: {
+      slidesPerView: 8,
+      spaceBetween: 20,
+    },
+  },
+});
+// new js 
+var lightbox = GLightbox({
+  selector: ".glightbox"
+});
+
+// new js 
+var faqItems = document.querySelectorAll(".faq-accordion-item");
+
+faqItems.forEach(function (item) {
+  var question = item.querySelector(".faq-question");
+  var icon = item.querySelector(".faq-icon i");
+
+  question.addEventListener("click", function () {
+    var isActive = item.classList.contains("active");
+
+    faqItems.forEach(function (el) {
+      el.classList.remove("active");
+      var otherIcon = el.querySelector(".faq-icon i");
+      if (otherIcon) {
+        otherIcon.className = "bi bi-plus";
+      }
+    });
+
+    if (!isActive) {
+      item.classList.add("active");
+      if (icon) {
+        icon.className = "bi bi-dash";
+      }
+    }
+  });
+});
+
+// new js 
+var teamSwiper = new Swiper(".teamSwiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 20,
+  loop: true,
+  speed: 600,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".team-btn-next",
+    prevEl: ".team-btn-prev",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2.2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3.2,
+      spaceBetween: 24,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});
+
+// new 
+var feedbackSwiper = new Swiper(".feedbackSwiper", {
+  slidesPerView: 1.15,
+  spaceBetween: 24,
+  loop: true,
+  speed: 600,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".feedback-btn-next",
+    prevEl: ".feedback-btn-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2.15,
+      spaceBetween: 24,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 28,
+    },
+  },
+});
+
+// n 
+// const lightbox = GLightbox({
+//   selector: '.glightbox'
+// });
+
+var commercialGridSwiper = new Swiper(".commercialGridSwiper", {
+  slidesPerView: 1,
+  grid: {
+    rows: 2,
+    fill: 'row'
+  },
+  spaceBetween: 16,
+  pagination: {
+    el: ".comm-grid-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+        fill: 'row'
+      },
+      spaceBetween: 18,
+    },
+    992: {
+      slidesPerView: 3,
+      grid: {
+        rows: 2,
+        fill: 'row'
+      },
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4,
+      grid: {
+        rows: 2,
+        fill: 'row'
+      },
+      spaceBetween: 22,
+    },
+  },
+});
