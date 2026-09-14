@@ -17,7 +17,7 @@ body {
   color: #ffffff;
   overflow-x: hidden;
 }
-
+/* 
 .top-header {
   background-color: #fff;
   padding: 14px 0;
@@ -54,11 +54,11 @@ body {
 
 .header-right a:hover {
   opacity: 0.8;
-}
+} */
 
 .custom-navbar {
   position: absolute;
-  top: 50px;
+  /* top: 50px; */
   left: 0;
   width: 100%;
   padding: 12px 0;
@@ -323,11 +323,11 @@ body {
   text-align: center;
   margin-left: 0;
 }
-
+/* hero css start  */
 .hero-wrapper {
   position: relative;
   min-height: 90vh;
-  background: url('https://i.pinimg.com/736x/c6/52/f0/c652f0369cea39fcc236dcaf9c78ac26.jpg') center center / cover no-repeat;
+  background: url('https://www.shalimarcorp.com/images/sbd-banner-shalimar.webp') center center / cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -428,7 +428,7 @@ body {
 
 .property-box {
   position: relative;
-  width: 320px;
+  width: 350px;
 }
 
 .property-content {
@@ -594,7 +594,7 @@ body {
   font-weight: 400;
   margin: 0;
 }
-
+/* hero cs end  */
 @media (max-width: 991px) {
   .top-header {
     display: none;
@@ -613,27 +613,13 @@ body {
     display: block;
   }
 
-  .hero-inner {
-    padding-top: 100px;
-  }
+ 
 
-  .hero-middle {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-  }
 
-  .property-box {
-    width: 100%;
-    max-width: 320px;
-  }
 
-  .stats-half-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+ 
+
+ 
 }
 
 /* about css  */
