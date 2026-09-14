@@ -379,3 +379,25 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+// new js 
+var blogsSwiper = new Swiper(".blogsSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 28,
+  loop: true,
+  navigation: {
+    nextEl: ".blogs-btn-next",
+    prevEl: ".blogs-btn-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
+});

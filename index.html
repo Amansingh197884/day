@@ -722,88 +722,115 @@
     </div>
   </section>
   <!-- Blog Section   -->
-  <section class="blogs-section">
+ <section class="blogs-section">
     <div class="blogs-container">
 
       <div class="blogs-header-row">
         <div class="blogs-header-left">
-          <span class="sub-heading-text">INSIGHTS & UPDATES</span>
-          <h2 class="main-heading-text">Our Blogs</h2>
+          <span class="sub-heading-text">WATCH OUR BLOGS</span>
+          <h2 class="main-heading-text">OUR BLOGS</h2>
         </div>
 
         <div class="blogs-header-right">
           <p class="section-desc-text">
             Stories, insights and trends from the world of real estate.
           </p>
-          <a href="#all-blogs" class="view-all-btn">
-            <span>View All Blogs</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
+          <div class="swiper-nav-buttons">
+            <button class="swiper-nav-btn blogs-btn-prev" type="button">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="swiper-nav-btn blogs-btn-next" type="button">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="blogs-grid">
+      <!-- Converted into a fully functional Swiper slider -->
+      <div class="swiper blogsSwiper">
+        <div class="swiper-wrapper">
 
-        <div class="blog-card">
-          <div class="blog-img-box">
-            <img src="https://i.pinimg.com/736x/b9/93/08/b993081e71267a04ce7736938ec39dbf.jpg" alt="Noida Investment"
-              class="blog-img">
-            <div class="blog-tag-badge">MARKET INSIGHTS</div>
+          <div class="swiper-slide">
+            <a href="property.html" class="blog-card text-decoration-none">
+              <div class="blog-img-box">
+                <img src="https://i.pinimg.com/736x/b9/93/08/b993081e71267a04ce7736938ec39dbf.jpg" alt="Bhutani CyberPark" class="blog-img">
+                <div class="blog-tag-badge">COMMERCIAL PROPERTY</div>
+              </div>
+
+              <div class="blog-body">
+                <div class="blog-meta-top">
+                  <span class="blog-date">Dec 10 2023</span>
+                  <h3 class="blog-title">Bhutani CyberPark</h3>
+                </div>
+
+                <div class="blog-footer">
+                  <span class="enquire-now-pill">Enquire Now</span>
+                </div>
+              </div>
+            </a>
           </div>
 
-          <div class="blog-body">
-            <h3 class="blog-title">Noida: The Next Big Investment Destination</h3>
+          <div class="swiper-slide">
+            <a href="property.html" class="blog-card text-decoration-none">
+              <div class="blog-img-box">
+                <img src="https://i.pinimg.com/736x/0c/f4/79/0cf4791c3fe9e932af38df184352a54e.jpg" alt="M3M Noida" class="blog-img">
+                <div class="blog-tag-badge">COMMERCIAL PROPERTY</div>
+              </div>
 
-            <div class="blog-footer">
-              <span class="blog-date"><i class="bi bi-clock"></i> 12 SEP 2024</span>
-              <a href="#blog-detail" class="read-more-link">
-                <span>Read More</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
+              <div class="blog-body">
+                <div class="blog-meta-top">
+                  <span class="blog-date">Jan 21 2024</span>
+                  <h3 class="blog-title">M3M Noida</h3>
+                </div>
+
+                <div class="blog-footer">
+                  <span class="enquire-now-pill">Enquire Now</span>
+                </div>
+              </div>
+            </a>
           </div>
+
+          <div class="swiper-slide">
+            <a href="property.html" class="blog-card text-decoration-none">
+              <div class="blog-img-box">
+                <img src="https://i.pinimg.com/1200x/a5/fb/9e/a5fb9e481416478ccd709796a3e3a5d2.jpg" alt="ACE Group Noida" class="blog-img">
+                <div class="blog-tag-badge">RESIDENTIAL PROPERTY</div>
+              </div>
+
+              <div class="blog-body">
+                <div class="blog-meta-top">
+                  <span class="blog-date">Feb 11 2024</span>
+                  <h3 class="blog-title">ACE Group Noida</h3>
+                </div>
+
+                <div class="blog-footer">
+                  <span class="enquire-now-pill">Enquire Now</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="property.html" class="blog-card text-decoration-none">
+              <div class="blog-img-box">
+                <img src="https://i.pinimg.com/736x/b9/93/08/b993081e71267a04ce7736938ec39dbf.jpg" alt="Bhutani Grandthum" class="blog-img">
+                <div class="blog-tag-badge">COMMERCIAL PROPERTY</div>
+              </div>
+
+              <div class="blog-body">
+                <div class="blog-meta-top">
+                  <span class="blog-date">Mar 15 2024</span>
+                  <h3 class="blog-title">Bhutani Grandthum</h3>
+                </div>
+
+                <div class="blog-footer">
+                  <span class="enquire-now-pill">Enquire Now</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
         </div>
-
-        <div class="blog-card">
-          <div class="blog-img-box">
-            <img src="https://i.pinimg.com/736x/0c/f4/79/0cf4791c3fe9e932af38df184352a54e.jpg"
-              alt="Commercial vs Residential" class="blog-img">
-            <div class="blog-tag-badge">INVESTMENT GUIDE</div>
-          </div>
-
-          <div class="blog-body">
-            <h3 class="blog-title">Commercial vs Residential: Which is Right for You?</h3>
-
-            <div class="blog-footer">
-              <span class="blog-date"><i class="bi bi-clock"></i> 08 SEP 2024</span>
-              <a href="#blog-detail" class="read-more-link">
-                <span>Read More</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-img-box">
-            <img src="https://i.pinimg.com/1200x/a5/fb/9e/a5fb9e481416478ccd709796a3e3a5d2.jpg" alt="Smart Workspaces"
-              class="blog-img">
-            <div class="blog-tag-badge">LIFESTYLE</div>
-          </div>
-
-          <div class="blog-body">
-            <h3 class="blog-title">The Future of Smart Workspaces</h3>
-
-            <div class="blog-footer">
-              <span class="blog-date"><i class="bi bi-clock"></i> 02 SEP 2024</span>
-              <a href="#blog-detail" class="read-more-link">
-                <span>Read More</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
       </div>
 
     </div>
@@ -835,7 +862,7 @@
         </a>
       </div>
 
-      <div class="landmark-right-stats">
+      <!-- <div class="landmark-right-stats">
         <div class="stat-item-box">
           <h3><span class="counter" data-target="5">0</span>M+</h3>
           <p>Sq. Ft. Area</p>
@@ -850,17 +877,18 @@
           <h3>Prime</h3>
           <p>Sector 62, Noida</p>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section>
 
   <!-- new section  -->
-  <footer class="main-footer-section">
+ <footer class="main-footer-section">
     <div class="footer-container">
 
       <div class="footer-top-grid">
 
+        <!-- Column 1: Brand Info -->
         <div class="footer-col brand-col">
           <div class="footer-brand-wrap">
             <img src="images/logo.webp" alt="Logo" class="footer-logo">
@@ -869,45 +897,50 @@
               <span>BUILDING BETTER TOMORROW</span>
             </div>
           </div>
+          <p class="footer-about-desc">
+            Investors Planet Realty is a full-service company for all your real estate needs.....
+          </p>
+          <a href="#about" class="footer-about-link">Know more</a>
         </div>
 
+        <!-- Column 2: Useful Links (Replacing Quick Links) -->
         <div class="footer-col">
-          <h4 class="footer-col-title">Quick Links</h4>
+          <h4 class="footer-col-title">Useful Links</h4>
           <ul class="footer-links-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Properties</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Investors</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Residential</a></li>
           </ul>
         </div>
 
+        <!-- Column 3: Contact Info (Updated with image details) -->
         <div class="footer-col contact-col">
           <h4 class="footer-col-title">Contact Info</h4>
           <div class="contact-item">
-            <i class="bi bi-geo-alt"></i>
-            <span>Bhutani Group, Sector 62, Noida,<br>Uttar Pradesh, India</span>
-          </div>
-          <div class="contact-item">
             <i class="bi bi-telephone"></i>
-            <a href="tel:+911201234567">+91 120 123 4567</a>
+            <a href="tel:+919555891638">+91 9555891638</a>
           </div>
           <div class="contact-item">
             <i class="bi bi-envelope"></i>
-            <a href="mailto:info@bhutani.com">info@bhutani.com</a>
+            <a href="mailto:info@investorsplanet.co.in">info@investorsplanet.co.in</a>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>Address : G-08, D-216, Block-D, Sector-63, Noida, U.P.-201301</span>
           </div>
 
           <div class="footer-social-icons">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
 
+        <!-- Column 4: Newsletter -->
         <div class="footer-col newsletter-col">
           <h4 class="footer-col-title">Newsletter</h4>
           <p class="newsletter-text">
@@ -915,7 +948,7 @@
           </p>
 
           <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email" required>
+            <input type="email" placeholder="Your Email" required>
             <button type="submit">
               <i class="bi bi-arrow-right"></i>
             </button>
