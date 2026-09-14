@@ -1547,7 +1547,6 @@ body {
   flex-shrink: 0;
 }
 
-/* Fixed Navigation Buttons with correct visible styling and hover states */
 .swiper-nav-btn {
   width: 44px;
   height: 44px;
@@ -1629,7 +1628,7 @@ body {
     text-align: left;
   }
 }
-/* new css  */
+/* blog css start*/
 .blogs-section {
   background-color: #faf8f5;
   padding: 100px 0;
@@ -1820,7 +1819,7 @@ body {
   }
 }
 
-/* new css  */
+/* blog css end  */
 .featured-landmark-section {
   position: relative;
   width: 100%;
