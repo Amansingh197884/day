@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investors Planet Realty</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="top-header">
+        <div class="header-container">
+            <div class="header-left">
+                <span>WELCOME TO INVESTORS PLANET REALTY</span>
+            </div>
+            <div class="header-right">
+                <a href="tel:+919555891638"><i class="bi bi-telephone-fill"></i> +91 95558 91638</a>
+                <a href="mailto:info@investorsplanet.co.in"><i class="bi bi-envelope-fill"></i>
+                    info@investorsplanet.co.in</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="custom-navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="brand-box">
+                <img src="images/logo.webp" alt="Logo" class="site-logo">
+            </a>
+
+            <button class="nav-toggle-btn" id="openMenu">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="desktop-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    
+                    <li class="nav-dropdown">
+                        <a href="#">
+                            PROPERTY <i class="bi bi-caret-down-fill"></i>
+                        </a>
+                        <ul class="dropdown-menu-list">
+                            <li><a href="property.html">Commercial</a></li>
+                            <li><a href="residental.html">Residential</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="carareer.html">CAREER</a></li>
+                    <li><a href="testimonial.html">TESTIMONIALS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#reach" class="enquire-btn">Enquire Now </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="side-overlay" id="sideOverlay"></div>
+
+    <div class="side-drawer" id="sideDrawer">
+        <div class="drawer-top">
+            <h4>Menu</h4>
+            <button id="closeMenu"><i class="bi bi-x-lg"></i></button>
+        </div>
+
+        <div class="drawer-links">
+            <a href="index.html" class="active">HOME</a>
+            
+            <div class="drawer-accordion">
+                <a href="javascript:void(0)" class="drawer-dropdown-toggle">
+                    PROPERTY <i class="bi bi-chevron-down"></i>
+                </a>
+                <div class="drawer-submenu">
+                    <a href="commercial.html">• Commercial</a>
+                    <a href="residential.html">• Residential</a>
+                </div>
+            </div>
+
+            <a href="about.html">ABOUT US</a>
+            <a href="career.html">CAREER</a>
+            <a href="testimonials.html">TESTIMONIALS</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+
+        <div class="drawer-bottom">
+            <div class="drawer-socials">
+                <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <a href="#reach" class="enquire-btn drawer-enquire">Enquire Now &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Commercial Banner -->
+    <section class="page-banner-section">
+      <div class="banner-dark-overlay"></div>
+      
+      <div class="banner-container">
+        <div class="banner-content-box">
+          <span class="banner-tagline">COMMERCIAL PORTFOLIO</span>
+          <div class="tagline-divider"></div>
+          
+          <h1 class="banner-main-title">Prime Commercial Landmarks.</h1>
+          
+          <p class="banner-description">
+            Explore Grade-A office spaces, high-street retail hubs, and high-yield investment<br class="d-none d-md-block">
+            destinations strategically located across prime business corridors.
+          </p>
+
+          <div class="banner-breadcrumbs">
+            <a href="index.html">Home</a>
+            <span class="crumb-sep">/</span>
+            <a href="#">Properties</a>
+            <span class="crumb-sep">/</span>
+            <span class="active-crumb">Commercial</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commercial Property Grid Section -->
+    <section class="commercial-grid-section">
+      <div class="property-container">
+        
+        <div class="property-header-row">
+          <div class="header-left">
+            <h2 class="main-title-serif">Commercial Landmarks</h2>
+            <p class="header-subtitle">
+              Explore our premier commercial hubs, retail avenues, and modern corporate spaces.
+            </p>
+          </div>
+
+          <div class="header-right">
+            <span class="switcher-tag">PROPERTY TYPES</span>
+            <div class="prop-type-pill-wrap">
+              <a href="commercial.html" class="type-pill active">
+                Commercial Property (6)
+              </a>
+              <a href="residential.html" class="type-pill">
+                Residential Property (8)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 Rows x 4 Columns Cards Grid -->
+        <div class="property-cards-grid">
+          
+          <!-- Card 1: M3M Noida -->
+          <div class="prop-grid-card">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=700&q=80" alt="M3M Noida">
+              <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+            </div>
+            <div class="card-body-box">
+              <h4 class="prop-name">M3M Noida</h4>
+              <p class="prop-text">M3M The Line offers a luxurious retail experience with a unique design......</p>
+              <a href="m3m-noida.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 2: Fairfox EON Noida -->
+          <div class="prop-grid-card">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80" alt="Fairfox EON Noida">
+              <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+            </div>
+            <div class="card-body-box">
+              <h4 class="prop-name">Fairfox EON Noida</h4>
+              <p class="prop-text">The future is full of Opportunities and it belongs to those who can see it today. Those who can see......</p>
+              <a href="fairfox-eon.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 3: ACE Group Noida -->
+          <div class="prop-grid-card">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=700&q=80" alt="ACE Group Noida">
+              <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+            </div>
+            <div class="card-body-box">
+              <h4 class="prop-name">ACE Group Noida</h4>
+              <p class="prop-text">ACE is a commercial property which is the perfect commercial spot in Noida......</p>
+              <a href="ace-group.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 4: GYGY Noida -->
+          <div class="prop-grid-card">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=80" alt="GYGY Noida">
+              <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+            </div>
+            <div class="card-body-box">
+              <h4 class="prop-name">GYGY Noida</h4>
+              <p class="prop-text">Project Site : Plot Number - 02, Sector - 140, Noida Uttar Pradesh 201305......</p>
+              <a href="gygy-noida.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 5: Bhutani Grandthum -->
+          <div class="prop-grid-card">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=700&q=80" alt="Bhutani Grandthum">
+              <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+            </div>
+            <div class="card-body-box">
+              <h4 class="prop-name">Bhutani Grandthum</h4>
+              <p class="prop-text">Bhutani Grandthum is a commercial property spot in Greater Noida West......</p>
+              <a href="bhutani-grandthum.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 6: Anand Habitat Sahibabad -->
+          <div class="prop-grid-card">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=700&q=80" alt="Anand Habitat Sahibabad">
+              <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Sahibabad</span>
+            </div>
+            <div class="card-body-box">
+              <h4 class="prop-name">Anand Habitat Sahibabad</h4>
+              <p class="prop-text">Anand Habitat Sahibabad is a commercial property spot in Sahibabad......</p>
+              <a href="anand-habitat.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 7: Sector 140A -->
+          <div class="prop-grid-card">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80" alt="Cyberthum Sector 140A">
+              <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Sector 140A</span>
+            </div>
+            <div class="card-body-box">
+              <h4 class="prop-name">Bhutani Cyberthum</h4>
+              <p class="prop-text">North India's tallest commercial tower with sky mall, lockable office units, and gaming arenas......</p>
+              <a href="bhutani-cyberthum.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 8: Sector 90 -->
+          <div class="prop-grid-card">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=80" alt="Alphathum Sector 90">
+              <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Sector 90</span>
+            </div>
+            <div class="card-body-box">
+              <h4 class="prop-name">Bhutani Alphathum</h4>
+              <p class="prop-text">Premium business towers featuring one of the world's largest rooftop infinity water pools......</p>
+              <a href="bhutani-alphathum.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer-section">
+      <div class="footer-container">
+        
+        <div class="footer-top-grid">
+          
+          <div class="footer-col brand-col">
+            <div class="footer-brand-wrap">
+              <img src="logo.png" alt="Logo" class="footer-logo">
+              <div class="footer-brand-text">
+                <h3>BHUTANI</h3>
+                <span>BUILDING BETTER TOMORROW</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Quick Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="commercial.html">Commercial</a></li>
+              <li><a href="residential.html">Residential</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col contact-col">
+            <h4 class="footer-col-title">Contact Info</h4>
+            <div class="contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>Bhutani Group, Sector 62, Noida,<br>Uttar Pradesh, India</span>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+911201234567">+91 120 123 4567</a>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:info@bhutani.com">info@bhutani.com</a>
+            </div>
+
+            <div class="footer-social-icons">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col newsletter-col">
+            <h4 class="footer-col-title">Newsletter</h4>
+            <p class="newsletter-text">
+              Stay updated with our latest projects and news.
+            </p>
+
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div class="copyright-text">
+            © 2024 Bhutani Group. All Rights Reserved.
+          </div>
+
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <span class="divider">|</span>
+            <a href="#">Terms & Conditions</a>
+            <span class="divider">|</span>
+            <a href="#">Sitemap</a>
+          </div>
+
+          <div class="tagline-text">
+            Designed for a Better Tomorrow.
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

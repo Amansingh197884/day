@@ -33,7 +33,7 @@
     <nav class="custom-navbar">
         <div class="nav-container">
 
-            <a href="#" class="brand-box">
+            <a href="index.html" class="brand-box">
                 <img src="images/logo.webp" alt="Logo" class="site-logo">
             </a>
 
@@ -43,13 +43,22 @@
 
             <div class="desktop-menu">
                 <ul class="nav-links">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Properties</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Investors</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    
+                    <li class="nav-dropdown">
+                        <a href="#">
+                            PROPERTY <i class="bi bi-caret-down-fill"></i>
+                        </a>
+                        <ul class="dropdown-menu-list">
+                            <li><a href="property.html">Commercial</a></li>
+                            <li><a href="residental.html">Residential</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="carareer.html">CAREER</a></li>
+                    <li><a href="testimonial.html">TESTIMONIALS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
 
                 <div class="nav-actions">
@@ -72,24 +81,23 @@
         </div>
 
         <div class="drawer-links">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Properties</a>
-            <a href="#">Projects</a>
-            <a href="#">Investors</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </div>
-
-        <div class="drawer-bottom">
-            <div class="drawer-socials">
-                <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="index.html" class="active">HOME</a>
+            
+            <div class="drawer-accordion">
+                <a href="javascript:void(0)" class="drawer-dropdown-toggle">
+                    PROPERTY <i class="bi bi-chevron-down"></i>
+                </a>
+                <div class="drawer-submenu">
+                    <a href="commercial.html">• Commercial</a>
+                    <a href="residential.html">• Residential</a>
+                </div>
             </div>
-            <a href="#reach" class="enquire-btn drawer-enquire">Enquire Now &rarr;</a>
+
+            <a href="about.html">ABOUT US</a>
+            <a href="career.html">CAREER</a>
+            <a href="testimonials.html">TESTIMONIALS</a>
+            <a href="contact.html">CONTACT US</a>
         </div>
-    </div>
 
 <!-- new  -->
  <section class="page-banner-section">

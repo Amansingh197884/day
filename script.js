@@ -295,3 +295,24 @@ var commercialGridSwiper = new Swiper(".commercialGridSwiper", {
     },
   },
 });
+
+var residentialSwiper = new Swiper(".residentialSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  loop: true,
+  speed: 650,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".res-btn-next",
+    prevEl: ".res-btn-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+});
