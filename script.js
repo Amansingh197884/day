@@ -316,3 +316,64 @@ var residentialSwiper = new Swiper(".residentialSwiper", {
     },
   },
 });
+
+// new 
+document.addEventListener("DOMContentLoaded", function () {
+  var amenitiesSwiper = new Swiper(".amenitiesSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".amen-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".amen-next",
+      prevEl: ".amen-prev",
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      850: {
+        slidesPerView: 3,
+        spaceBetween: 18,
+      },
+    },
+  });
+
+  var gallerySwiper = new Swiper(".gallerySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".gallery-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".gallery-next",
+      prevEl: ".gallery-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+    },
+  });
+});
