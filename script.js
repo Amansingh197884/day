@@ -59,6 +59,8 @@ function resetTimer() {
 }
 
 startSlider();
+
+
 // about js 
 var tabButtons = document.querySelectorAll(".tab-btn");
 
