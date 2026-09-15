@@ -123,10 +123,11 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
+  font-family: var(--font-serif);
   color: #ffffff;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   transition: color 0.3s;
 }
 
