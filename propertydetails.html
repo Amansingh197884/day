@@ -2,119 +2,97 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Investors Planet Realty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3M The Line | Investors Planet Realty</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detail.css">
 </head>
 
 <body>
 
-  <!-- <header class="top-header">
-        <div class="header-container">
-            <div class="header-left">
-                <span>WELCOME TO INVESTORS PLANET REALTY</span>
-            </div>
-            <div class="header-right">
-                <a href="tel:+919555891638"><i class="bi bi-telephone-fill"></i> +91 95558 91638</a>
-                <a href="mailto:info@investorsplanet.co.in"><i class="bi bi-envelope-fill"></i>
-                    info@investorsplanet.co.in</a>
-            </div>
-        </div>
-    </header> -->
-
-  <nav class="custom-navbar">
-    <div class="nav-container">
-
-      <a href="index.html" class="brand-box">
-        <img src="images/logo.webp" alt="Logo" class="site-logo">
-      </a>
-
-      <button class="nav-toggle-btn" id="openMenu">
-        <i class="bi bi-list"></i>
-      </button>
-
-      <div class="desktop-menu">
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">HOME</a></li>
-
-          <li class="nav-dropdown">
-            <a href="#">
-              PROPERTY <i class="bi bi-caret-down-fill"></i>
+    <!-- Navigation Bar -->
+    <nav class="custom-navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-box">
+                <img src="images/logo.webp" alt="Logo" class="site-logo">
             </a>
-            <ul class="dropdown-menu-list">
-              <li><a href="property.html">Commercial</a></li>
-              <li><a href="residental.html">Residential</a></li>
-            </ul>
-          </li>
 
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="carareer.html">CAREER</a></li>
-          <li><a href="testimonial.html">TESTIMONIALS</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
+            <button class="nav-toggle-btn" id="openMenu">
+                <i class="bi bi-list"></i>
+            </button>
 
-        <div class="nav-actions">
-          <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#reach" class="enquire-btn">Enquire Now </a>
+            <div class="desktop-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="active">PROPERTY <i class="bi bi-caret-down-fill"></i></a>
+                        <ul class="dropdown-menu-list">
+                            <li><a href="property.html">Commercial</a></li>
+                            <li><a href="residental.html">Residential</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="carareer.html">CAREER</a></li>
+                    <li><a href="testimonial.html">TESTIMONIALS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#enquiry-form-section" class="enquire-btn">Enquire Now</a>
+                </div>
+            </div>
         </div>
-      </div>
+    </nav>
 
-    </div>
-  </nav>
+    <div class="side-overlay" id="sideOverlay"></div>
 
-  <div class="side-overlay" id="sideOverlay"></div>
-
-  <div class="side-drawer" id="sideDrawer">
-    <div class="drawer-top">
-      <h4>Menu</h4>
-      <button id="closeMenu"><i class="bi bi-x-lg"></i></button>
-    </div>
-
-    <div class="drawer-links">
-      <a href="index.html" class="active">HOME</a>
-
-      <div class="drawer-accordion">
-        <a href="javascript:void(0)" class="drawer-dropdown-toggle">
-          PROPERTY <i class="bi bi-chevron-down"></i>
-        </a>
-        <div class="drawer-submenu">
-          <a href="property.html">• Commercial</a>
-          <a href="residental.html">• Residential</a>
+    <div class="side-drawer" id="sideDrawer">
+        <div class="drawer-top">
+            <h4>Menu</h4>
+            <button id="closeMenu"><i class="bi bi-x-lg"></i></button>
         </div>
-      </div>
-
-      <a href="about.html">ABOUT US</a>
-      <a href="carareer.html">CAREER</a>
-      <a href="testimonial.html">TESTIMONIALS</a>
-      <a href="contact.html">CONTACT US</a>
+        <div class="drawer-links">
+            <a href="index.html">HOME</a>
+            <div class="drawer-accordion">
+                <a href="javascript:void(0)" class="drawer-dropdown-toggle">
+                    PROPERTY <i class="bi bi-chevron-down"></i>
+                </a>
+                <div class="drawer-submenu">
+                    <a href="property.html">• Commercial</a>
+                    <a href="residental.html">• Residential</a>
+                </div>
+            </div>
+            <a href="about.html">ABOUT US</a>
+            <a href="carareer.html">CAREER</a>
+            <a href="testimonial.html">TESTIMONIALS</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+        <div class="drawer-bottom">
+            <div class="drawer-socials">
+                <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <a href="#enquiry-form-section" class="enquire-btn drawer-enquire">Enquire Now &rarr;</a>
+        </div>
     </div>
-    <!-- navbar end  -->
-    <div class="drawer-bottom">
-      <div class="drawer-socials">
-        <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
-      </div>
-      <a href="#reach" class="enquire-btn drawer-enquire">Enquire Now &rarr;</a>
-    </div>
-  </div>
-  <!-- navbar end  -->
 
-    <!-- new  -->
+    <!-- Page Banner -->
     <section class="page-banner-section">
         <div class="banner-dark-overlay"></div>
         <div class="banner-container">
-            <div class="banner-content-box">
+            <div class="banner-content-box animate__animated animate__fadeInDown">
                 <span class="banner-tagline">PROJECT SHOWCASE</span>
                 <div class="tagline-divider"></div>
                 <h1 class="banner-main-title">M3M The Line</h1>
@@ -132,30 +110,25 @@
         </div>
     </section>
 
-
-
-    <!-- new  -->
+    <!-- Property Details Main Section -->
     <section class="prop-detail-luxury-section">
         <div class="luxury-detail-container">
 
+            <!-- Hero Showcase Card -->
             <div class="luxury-hero-card">
                 <div class="hero-image-pane">
                     <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1400"
                         alt="M3M Project Noida" class="hero-cover-img">
-                    <div class="hero-img-badge">
-                        <span class="pulse-dot"></span>
-                        <span>Verified Commercial Project</span>
-                    </div>
                 </div>
 
                 <div class="hero-content-pane">
                     <div class="hero-top-row">
                         <span class="luxury-pill">SECTOR 72, CENTRAL NOIDA</span>
-                        <span class="luxury-status">Grade-A Development</span>
+                        <span class="luxury-status">Grade-A Commercial Development</span>
                     </div>
 
                     <h1 class="luxury-project-title">M3M Project Noida</h1>
-                    <p class="luxury-designer-sub">Designed by DPA Consultants Pvt. Ltd.</p>
+                    <p class="luxury-designer-sub">Architectural Masterpiece by DPA Consultants Pvt. Ltd.</p>
 
                     <div class="quick-highlights-strip">
                         <div class="quick-stat-box">
@@ -193,7 +166,7 @@
 
                     <div class="hero-cta-group">
                         <a href="#enquiry-form-section" class="luxury-cta-primary">
-                            <span>Enquire & Book Site Visit</span>
+                            <span>Schedule Site Visit</span>
                             <i class="bi bi-arrow-right"></i>
                         </a>
                         <a href="tel:+919555891638" class="luxury-cta-secondary">
@@ -204,10 +177,12 @@
                 </div>
             </div>
 
+            <!-- Split Layout: Content + Sticky Sidebar -->
             <div class="luxury-split-layout">
 
                 <div class="luxury-left-flow">
 
+                    <!-- About Project Card -->
                     <div class="luxury-content-card">
                         <div class="section-card-heading">
                             <span class="mini-kicker">ABOUT PROJECT</span>
@@ -215,30 +190,25 @@
                         </div>
                         <p class="lead-detail-p">
                             M3M The Line offers a luxurious retail experience with a unique design by DPA Consultants
-                            Pvt. Ltd. The linear structure features double height stores on the ground floor, three
-                            levels of anchor stores and a prime front façade for maximum visibility. Crafted with
-                            meticulous attention to detail and avant-garde design, the hallways seamlessly guide patrons
-                            through different sections.
+                            Pvt. Ltd. The linear structure features double-height stores on the ground floor, three
+                            levels of anchor stores, and a prime front façade ensuring maximum visibility and high ROI.
                         </p>
                         <p class="body-detail-p">
-                            Beyond retail, The Line Avenue boasts a Food Court, multi-cuisine restaurants on the 4th
-                            floor, and Alfresco Dining on the 5th floor—a perfect blend of shopping and gastronomic
-                            delights. Key amenities include a Hypermarket on the Lower Ground Floor, three floors for
-                            Anchor Stores and a Family Entertainment Zone on the 4th Floor. The Fine Dining experience
-                            enhances the overall sophistication of this premium retail destination. The Line Avenue
-                            invites patrons to indulge in an elevated shopping experience, seamlessly integrating
-                            luxury, entertainment and culinary excellence.
+                            Beyond retail, The Line Avenue boasts a sprawling Food Court, multi-cuisine restaurants on
+                            the 4th
+                            floor, and Alfresco Dining on the 5th floor—creating a seamless blend of shopping,
+                            lifestyle, and fine dining.
                         </p>
                     </div>
 
+                    <!-- Pricing Grid -->
                     <div class="luxury-content-card">
                         <div class="section-card-heading">
                             <span class="mini-kicker">FLOOR-WISE RATES</span>
-                            <h2>Pricing (BSP in Rs. Per Sqft)</h2>
+                            <h2>Pricing & Floor Plan Breakdown (BSP)</h2>
                         </div>
 
                         <div class="luxury-pricing-grid">
-
                             <div class="pricing-tile">
                                 <div class="tile-top-tag">LOWER GROUND</div>
                                 <div class="tile-amount">
@@ -247,7 +217,7 @@
                                     <span class="per">/ Sq.Ft.</span>
                                 </div>
                                 <div class="tile-floor-name">Lower Ground Floor</div>
-                                <div class="tile-desc">Dedicated for Hypermarket & Daily Footfall</div>
+                                <div class="tile-desc">Dedicated Hypermarket & Daily Footfall Corridor</div>
                             </div>
 
                             <div class="pricing-tile featured-pricing-tile">
@@ -270,7 +240,7 @@
                                     <span class="per">/ Sq.Ft.</span>
                                 </div>
                                 <div class="tile-floor-name">Ground Floor (Single Height)</div>
-                                <div class="tile-desc">Prime Front Facade Visibility Corridors</div>
+                                <div class="tile-desc">Prime Front Facade Visibility Corridor</div>
                             </div>
 
                             <div class="pricing-tile">
@@ -281,7 +251,7 @@
                                     <span class="per">/ Sq.Ft.</span>
                                 </div>
                                 <div class="tile-floor-name">First Floor</div>
-                                <div class="tile-desc">Anchor Store Outlets & Fashion Apparel</div>
+                                <div class="tile-desc">Anchor Store Outlets & Fashion Apparels</div>
                             </div>
 
                             <div class="pricing-tile">
@@ -292,7 +262,7 @@
                                     <span class="per">/ Sq.Ft.</span>
                                 </div>
                                 <div class="tile-floor-name">Second Floor</div>
-                                <div class="tile-desc">Electronics, Lifestyle & Specialty Retail</div>
+                                <div class="tile-desc">Electronics, Lifestyle & Specialty Retail Units</div>
                             </div>
 
                             <div class="pricing-tile">
@@ -305,10 +275,10 @@
                                 <div class="tile-floor-name">3rd / 4th / 5th Floor</div>
                                 <div class="tile-desc">Food Court, Gaming Zone & Alfresco Dining</div>
                             </div>
-
                         </div>
                     </div>
 
+                    <!-- World-Class Amenities -->
                     <div class="luxury-content-card">
                         <div class="section-card-heading">
                             <span class="mini-kicker">INFRASTRUCTURE</span>
@@ -319,41 +289,42 @@
                             <div class="amenity-item-card">
                                 <div class="amenity-icon-circle"><i class="bi bi-controller"></i></div>
                                 <h4>Family Entertainment</h4>
-                                <p>4th Floor modern gaming zones, multiplex spaces and recreation centers.</p>
+                                <p>4th Floor modern gaming zones, multiplex spaces, and recreation hubs.</p>
                             </div>
 
                             <div class="amenity-item-card">
                                 <div class="amenity-icon-circle"><i class="bi bi-cup-straw"></i></div>
                                 <h4>Food Court & Alfresco</h4>
-                                <p>Fine dining terrace, multi-cuisine open-air cafes on 4th & 5th floor.</p>
+                                <p>Fine dining terraces and multi-cuisine open-air cafes.</p>
                             </div>
 
                             <div class="amenity-item-card">
                                 <div class="amenity-icon-circle"><i class="bi bi-car-front-fill"></i></div>
                                 <h4>Multi-Level Parking</h4>
-                                <p>Ample visitor parking and dedicated automated basement bays.</p>
+                                <p>Ample visitor parking and automated basement management bays.</p>
                             </div>
 
                             <div class="amenity-item-card">
                                 <div class="amenity-icon-circle"><i class="bi bi-lightning-charge-fill"></i></div>
                                 <h4>100% Power Backup</h4>
-                                <p>Fully air-conditioned centralized HVAC system with 24x7 power grid.</p>
+                                <p>Centralized HVAC system with 24x7 robust power grid infrastructure.</p>
                             </div>
 
                             <div class="amenity-item-card">
                                 <div class="amenity-icon-circle"><i class="bi bi-shield-check"></i></div>
                                 <h4>3-Tier Security</h4>
-                                <p>CCTV surveillance, automated access control and dedicated fire safety.</p>
+                                <p>Advanced CCTV surveillance, access control, and dedicated fire safety systems.</p>
                             </div>
 
                             <div class="amenity-item-card">
                                 <div class="amenity-icon-circle"><i class="bi bi-train-front"></i></div>
                                 <h4>Metro Corridor Link</h4>
-                                <p>Located right beside Sector 72 Metro Station for continuous high footfall.</p>
+                                <p>Directly positioned beside Sector 72 Metro Station for massive footfall.</p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Photo Tour Gallery -->
                     <div class="luxury-content-card">
                         <div class="section-card-heading">
                             <span class="mini-kicker">PHOTO TOUR</span>
@@ -389,6 +360,7 @@
                         </div>
                     </div>
 
+                    <!-- Location & Map -->
                     <div class="luxury-content-card">
                         <div class="section-card-heading">
                             <span class="mini-kicker">OFFICIAL LOCATION</span>
@@ -413,25 +385,20 @@
 
                 </div>
 
+                <!-- Sticky Right Enquiry Form (Simplified: Name, Phone, City) -->
                 <div class="luxury-right-sticky" id="enquiry-form-section">
-
                     <div class="sticky-contact-card">
                         <div class="form-header-badge">
                             <span class="sub-heading-text">DIRECT DEVELOPER DESK</span>
                             <h3 class="form-main-heading">Book A Site Visit</h3>
-                            <p class="form-sub-text">Fill in your details to get verified price sheets, floor plans &
-                                payment schedules.</p>
+                            <p class="form-sub-text">Share your details to receive verified price sheets, layout plans &
+                                offers instantly.</p>
                         </div>
 
                         <form class="contact-inputs-grid">
                             <div class="input-field-group">
                                 <label class="field-title">Full Name *</label>
                                 <input type="text" placeholder="Enter your full name" required class="text-input-box">
-                            </div>
-
-                            <div class="input-field-group">
-                                <label class="field-title">Email Address *</label>
-                                <input type="email" placeholder="you@example.com" required class="text-input-box">
                             </div>
 
                             <div class="input-field-group">
@@ -444,41 +411,25 @@
                             </div>
 
                             <div class="input-field-group">
-                                <label class="field-title">Interested In</label>
-                                <div class="custom-dropdown-box">
-                                    <select class="select-box-input">
-                                        <option value="ground-double">Ground Floor (Double Height)</option>
-                                        <option value="ground-single">Ground Floor (Single Height)</option>
-                                        <option value="lower-ground">Lower Ground (Hypermarket)</option>
-                                        <option value="first-floor">1st Floor (Anchor Stores)</option>
-                                        <option value="second-floor">2nd Floor (Retail Units)</option>
-                                        <option value="upper-floors">3rd/4th/5th Floor (Dining & Entertainment)</option>
-                                    </select>
-                                    <i class="bi bi-chevron-down"></i>
-                                </div>
-                            </div>
-
-                            <div class="input-field-group">
-                                <label class="field-title">Your Message / Specific Query</label>
-                                <textarea rows="3"
-                                    placeholder="I am interested in M3M Project Noida and want to schedule a visit..."
-                                    class="textarea-box"></textarea>
+                                <label class="field-title">City / Location *</label>
+                                <input type="text" placeholder="e.g. Delhi, Noida, Gurgaon" required
+                                    class="text-input-box">
                             </div>
 
                             <div class="checkbox-row">
                                 <input type="checkbox" id="detailConsent" required checked>
-                                <label for="detailConsent">I agree to be contacted for verified updates & exclusive site
+                                <label for="detailConsent">I agree to receive verified updates & exclusive project site
                                     tours.</label>
                             </div>
 
                             <button type="submit" class="send-message-btn">
-                                <span>Send Enquiry Now</span>
+                                <span>Submit Enquiry</span>
                                 <i class="bi bi-arrow-right"></i>
                             </button>
                         </form>
 
                         <div class="contact-direct-helpline">
-                            <span>Or speak directly to our Investment Advisor:</span>
+                            <span>Or speak directly with our Senior Advisor:</span>
                             <div class="advisor-row">
                                 <div class="advisor-icon"><i class="bi bi-telephone-fill"></i></div>
                                 <div class="advisor-info">
@@ -488,25 +439,23 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
 
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="main-footer-section">
         <div class="footer-container">
-
             <div class="footer-top-grid">
-
                 <div class="footer-col brand-col">
                     <div class="footer-brand-wrap">
-                        <img src="logo.png" alt="Logo" class="footer-logo">
+                        <img src="images/logo.webp" alt="Logo" class="footer-logo">
                         <div class="footer-brand-text">
-                            <h3>BHUTANI</h3>
-                            <span>BUILDING BETTER TOMORROW</span>
+                            <h3>INVESTORS PLANET</h3>
+                            <span>REALTY & BUILDERS</span>
                         </div>
                     </div>
                 </div>
@@ -516,10 +465,10 @@
                     <ul class="footer-links-list">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="commercial.html">Commercial</a></li>
-                        <li><a href="residential.html">Residential</a></li>
-                        <li><a href="career.html">Career</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="property.html">Commercial</a></li>
+                        <li><a href="residental.html">Residential</a></li>
+                        <li><a href="carareer.html">Career</a></li>
+                        <li><a href="testimonial.html">Testimonials</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -528,15 +477,15 @@
                     <h4 class="footer-col-title">Contact Info</h4>
                     <div class="contact-item">
                         <i class="bi bi-geo-alt"></i>
-                        <span>Bhutani Group, Sector 62, Noida,<br>Uttar Pradesh, India</span>
+                        <span>Sector 72, Noida, Uttar Pradesh, India</span>
                     </div>
                     <div class="contact-item">
                         <i class="bi bi-telephone"></i>
-                        <a href="tel:+911201234567">+91 120 123 4567</a>
+                        <a href="tel:+919555891638">+91 95558 91638</a>
                     </div>
                     <div class="contact-item">
                         <i class="bi bi-envelope"></i>
-                        <a href="mailto:info@bhutani.com">info@bhutani.com</a>
+                        <a href="mailto:info@investorsplanet.co.in">info@investorsplanet.co.in</a>
                     </div>
 
                     <div class="footer-social-icons">
@@ -550,41 +499,28 @@
 
                 <div class="footer-col newsletter-col">
                     <h4 class="footer-col-title">Newsletter</h4>
-                    <p class="newsletter-text">
-                        Stay updated with our latest projects and news.
-                    </p>
-
+                    <p class="newsletter-text">Stay updated with our latest commercial and residential real estate
+                        launches.</p>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Enter your email" required>
-                        <button type="submit">
-                            <i class="bi bi-arrow-right"></i>
-                        </button>
+                        <button type="submit"><i class="bi bi-arrow-right"></i></button>
                     </form>
                 </div>
-
             </div>
 
             <div class="footer-bottom-bar">
-                <div class="copyright-text">
-                    © 2024 Bhutani Group. All Rights Reserved.
-                </div>
-
+                <div class="copyright-text">© 2026 Investors Planet Realty. All Rights Reserved.</div>
                 <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <span class="divider">|</span>
-                    <a href="#">Terms & Conditions</a>
-                    <span class="divider">|</span>
+                    <a href="#">Privacy Policy</a><span class="divider">|</span>
+                    <a href="#">Terms & Conditions</a><span class="divider">|</span>
                     <a href="#">Sitemap</a>
                 </div>
-
-                <div class="tagline-text">
-                    Designed for a Better Tomorrow.
-                </div>
+                <div class="tagline-text">Built for Better Investments.</div>
             </div>
-
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
