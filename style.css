@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --font-serif: 'Cormorant Garamond', serif;
-  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: "Poppins", sans-serif;
+  --font-sans: "Poppins", sans-serif;
 }
 
 * {
@@ -12,10 +12,14 @@
 }
 
 body {
-  font-family: var(--font-sans);
   background-color: #0b0f14;
   color: #ffffff;
   overflow-x: hidden;
+  --font-serif: 'Cormorant Garamond', serif !important;
+
+}
+h1,h2,h3,h4,a,i,input{
+  font-family: var(--font-serif) !important;
 }
 /* 
 .top-header {
@@ -324,6 +328,7 @@ body {
   text-align: center;
   margin-left: 0;
 }
+
 /* hero css start  */
 .hero-wrapper {
   position: relative;
@@ -396,14 +401,14 @@ body {
   font-size: clamp(38px, 5.5vw, 84px);
   line-height: 1.08;
   font-weight: 500;
-  color: #f1ede6;
+  color: #fff;
   margin-bottom: 16px;
 }
 
 .main-heading span {
   font-family: var(--font-serif);
   font-weight: 500;
-  color: #e6c08e;
+  color: #edbc7c;
 }
 
 .sub-heading {
@@ -416,10 +421,11 @@ body {
 
 .explore-action-btn {
   display: inline-flex;
+  font-family: var(--font-serif);
   align-items: center;
   gap: 10px;
-  background-color: #eeddbb;
-  color: #1a1e24;
+  background-color: #edbc7c;
+  color: #000;
   padding: 12px 26px;
   border-radius: 40px;
   font-size: 13px;
@@ -551,7 +557,7 @@ body {
 
 .stat-unit h2 {
   font-family: var(--font-serif);
-  font-size: clamp(32px, 4vw, 46px);
+  font-size: clamp(30px, 4vw, 35px);
   font-weight: 400;
   color: #f1ede6;
   margin-bottom: 2px;
@@ -612,6 +618,7 @@ body {
     margin-bottom: 20px;
   }
 }
+
 /* hero css end  */
 @media (max-width: 991px) {
   .top-header {
@@ -631,12 +638,12 @@ body {
     display: block;
   }
 
- 
-
-  
 
 
-  
+
+
+
+
 }
 
 /* about css  */
@@ -910,7 +917,7 @@ body {
   height: 420px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .tall-image-wrapper img {
@@ -974,7 +981,9 @@ body {
     gap: 40px;
   }
 
-  .search-panel, .about-panel, .image-panel {
+  .search-panel,
+  .about-panel,
+  .image-panel {
     width: 100%;
     flex: unset;
   }
@@ -1012,6 +1021,7 @@ body {
     padding: 14px 18px;
   }
 }
+
 /* property css start  */
 .property-type-section {
   background-color: #0b0f14;
@@ -1080,7 +1090,7 @@ body {
   flex-shrink: 0;
 }
 
- .swiper-nav-btn {
+.swiper-nav-btn {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1165,7 +1175,7 @@ body {
   gap: 8px;
   transform: translateY(20px);
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), background-color 0.3s ease;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .property-type-card:hover .hover-view-btn {
@@ -1280,6 +1290,7 @@ body {
     height: 380px;
   }
 }
+
 /* property-css end  */
 .selling-projects-section {
   background-color: #faf8f5;
@@ -1481,6 +1492,7 @@ body {
     text-align: left;
   }
 }
+
 /* project end  */
 /* new css  */
 .partners-marquee-section {
@@ -1561,7 +1573,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   backdrop-filter: blur(8px);
-}   
+}
 
 .partners-marquee-section .swiper-nav-btn:hover {
   background-color: #eeddbb;
@@ -1628,6 +1640,7 @@ body {
     text-align: left;
   }
 }
+
 /* blog css start*/
 .blogs-section {
   background-color: #faf8f5;
@@ -1849,6 +1862,7 @@ body {
     text-align: left;
   }
 }
+
 /* blog css end  */
 .featured-landmark-section {
   position: relative;
@@ -2303,6 +2317,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 /* new css / */
 .page-banner-section {
   position: relative;
@@ -5437,7 +5452,7 @@ body {
   position: relative;
 }
 
-.nav-links li.nav-dropdown > a {
+.nav-links li.nav-dropdown>a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
