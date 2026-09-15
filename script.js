@@ -1,71 +1,64 @@
-window.addEventListener("scroll", function () {
-  var navbar = document.querySelector(".custom-navbar");
-  if (window.scrollY > 40) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
-
-var openBtn = document.getElementById("openMenu");
-var closeBtn = document.getElementById("closeMenu");
-var sideDrawer = document.getElementById("sideDrawer");
-var sideOverlay = document.getElementById("sideOverlay");
-var menuItems = document.querySelectorAll(".drawer-links a");
-
-function openSideMenu() {
-  sideDrawer.classList.add("active");
-  sideOverlay.classList.add("active");
-  document.body.style.overflow = "hidden";
-}
-
-function closeSideMenu() {
-  sideDrawer.classList.remove("active");
-  sideOverlay.classList.remove("active");
-  document.body.style.overflow = "auto";
-}
-
-if (openBtn) {
-  openBtn.addEventListener("click", openSideMenu);
-}
-
-if (closeBtn) {
-  closeBtn.addEventListener("click", closeSideMenu);
-}
-
-if (sideOverlay) {
-  sideOverlay.addEventListener("click", closeSideMenu);
-}
-
-menuItems.forEach(function (item) {
-  item.addEventListener("click", closeSideMenu);
-});
-
-var counters = document.querySelectorAll(".counter");
-
-function startCounting() {
-  counters.forEach(function (counter) {
-    var target = +counter.getAttribute("data-target");
-    var count = 0;
-    var speed = target / 35;
-
-    function updateCount() {
-      count += speed;
-      if (count < target) {
-        counter.innerText = Math.ceil(count);
-        setTimeout(updateCount, 30);
-      } else {
-        counter.innerText = target;
-      }
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('mainNavbar');
+    if (window.scrollY > 80) {
+        navbar.classList.add('sticky-nav');
+    } else {
+        navbar.classList.remove('sticky-nav');
     }
-    updateCount();
-  });
-}
-
-window.addEventListener("load", function () {
-  startCounting();
 });
 
+let slides = document.querySelectorAll('.hero-slide');
+let dots = document.querySelectorAll('.page-dot-btn');
+let badgeTitle = document.getElementById('badgeTitle');
+let badgeSub = document.getElementById('badgeSub');
+
+let slideData = [
+    { title: "Bhutani City Center", sub: "Noida's New Landmark" },
+    { title: "Alphathum Luxury", sub: "Business Towers" },
+    { title: "Cyberthum Commercial", sub: "The Ultimate Hub" }
+];
+
+let currentSlideIndex = 0;
+let slideInterval;
+
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    
+    badgeTitle.innerText = slideData[index].title;
+    badgeSub.innerText = slideData[index].sub;
+    
+    currentSlideIndex = index;
+}
+
+function nextSlide() {
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    showSlide(currentSlideIndex);
+}
+
+function nextSlideManual() {
+    nextSlide();
+    resetTimer();
+}
+
+function currentSlide(index) {
+    showSlide(index);
+    resetTimer();
+}
+
+function startSlider() {
+    slideInterval = setInterval(nextSlide, 6000);
+}
+
+function resetTimer() {
+    clearInterval(slideInterval);
+    startSlider();
+}
+
+startSlider();
 // about js 
 var tabButtons = document.querySelectorAll(".tab-btn");
 
